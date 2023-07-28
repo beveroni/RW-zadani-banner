@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 ::after,
 ::before {
@@ -24,6 +25,7 @@ body {
 .banner {
   background-color: #e74c3c;
 }
+
 .obdelnik {
   background-color: #2ecc71;
 }
@@ -33,3 +35,18 @@ Nastavte CSS pro třídu .banner tak, aby:
 - ve výchozím stavu (=na mobilu) bude banner skrytý
 - na obrazovce širší než 800px se banner zobrazí
 */
+
+.obdelnik div {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .banner {
+    display: block;
+  }
+}
